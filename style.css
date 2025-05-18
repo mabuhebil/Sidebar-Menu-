@@ -7,17 +7,35 @@
 body {
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .container {
     height: 100%;
-    width: 200px;
+    width: 50px;
     background-color: rgb(58, 56, 56);
+    transition: all 0.3s ease;
+}
+
+
+.container .linkes_box ul li span,
+.container .linkes_box ul .span {
+    display: none;
+}
+
+
+.container:hover {
+    width: 200px;
+}
+
+.container:hover .linkes_box ul li span {
+    display: inline;
 }
 
 .container .tittle img {
     width: 32px;
     height: 32px;
+    margin-left: -5px;
 }
 
 .container .tittle {
@@ -30,4 +48,60 @@ body {
 .container .tittle span {
     color: #fff;
     font-size: 19px;
+}
+
+.container .linkes_box ul {
+    padding-top: 10px;
+}
+
+.container .linkes_box ul li {
+    color: #ffffff;
+    list-style: none;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+
+.container .linkes_box ul li i {
+    padding-right: 20px;
+
+}
+
+.container .linkes_box .span {
+    display: block;
+    color: #fff;
+    padding: 5px 11px;
+    margin-bottom: 10px;
+
+}
+
+.container .linkes_box {
+    height: 100%;
+}
+
+.container .linkes_box ul {
+    height: 80%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+.container .linkes_box .img_box {
+
+    display: flex;
+    padding-left: 11px;
+    padding-top: 10px;
+    gap: 10px;
+    color: #fff;
+}
+
+.container .linkes_box .img_box img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.container .linkes_box .img_box span {
+    font-size: 15px;
+    font-weight: 600;
 }
