@@ -12,15 +12,19 @@ body {
 
 .container {
     height: 100%;
-    width: 50px;
+    width: 60px;
     background-color: rgb(58, 56, 56);
     transition: all 0.3s ease;
 }
 
+.container .linkes_box ul li i {
+    display: inline;
+}
 
 .container .linkes_box ul li span,
 .container .linkes_box ul .span {
     display: none;
+
 }
 
 
@@ -28,14 +32,15 @@ body {
     width: 200px;
 }
 
-.container:hover .linkes_box ul li span {
-    display: inline;
+
+.container:hover .linkes_box ul li span,
+.container:hover .linkes_box ul .span {
+    display: block;
 }
 
 .container .tittle img {
     width: 32px;
     height: 32px;
-    margin-left: -5px;
 }
 
 .container .tittle {
@@ -57,7 +62,7 @@ body {
 .container .linkes_box ul li {
     color: #ffffff;
     list-style: none;
-    padding: 15px 20px;
+    padding: 10px 15px;
     font-size: 14px;
 }
 
@@ -89,9 +94,9 @@ body {
 .container .linkes_box .img_box {
 
     display: flex;
-    padding-left: 11px;
+    padding-left: 15px;
     padding-top: 10px;
-    gap: 10px;
+    gap: 15px;
     color: #fff;
 }
 
@@ -104,4 +109,61 @@ body {
 .container .linkes_box .img_box span {
     font-size: 15px;
     font-weight: 600;
+}
+
+.container .linkes_box ul li a {
+    display: flex;
+}
+
+/* update */
+
+.container .linkes_box li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container .linkes_box li a {
+    transition: all 0.3s ease;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.container .linkes_box li a:hover {
+    background-color: rgb(48, 43, 43);
+
+}
+
+
+
+.container .linkes_box .img_box .text-img span {
+    font-size: 13px;
+}
+
+.container .linkes_box .img_box .text-img h4 {
+    font-size: 14px;
+}
+
+.container:hover .linkes_box .img_box {
+    background-color: rgb(48, 43, 43);
+    width: 80%;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    margin-left: 15px;
+    padding-right: 15px;
+}
+
+hr {
+    width: 60%;
+    margin-left: 13px;
+    background-color: #a59e9e;
+    border: none;
+    height: 1px;
+}
+
+.hr {
+    margin-top: 10px;
+}
+
+.container:hover hr {
+    display: none;
 }
